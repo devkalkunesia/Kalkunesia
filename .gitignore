@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+devtempgoogle-fonts/
+devtemp_nextjs/
+Compound-Interest-Tool/
+financialRatios/
+future-value-investment-calculator/
+lbs-pe-vc-simulations/
+mdn-content/
+passcpa/
+temp-react/
+test-results/
+tmp-table/
+tmp/
+tradingutils-demo/
+kalkunesia-core.zip
+build-output.txt
+*.b64

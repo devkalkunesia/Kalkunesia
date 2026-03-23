@@ -24,11 +24,31 @@
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
+    "next.config.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "lib/**/*.ts",
+    "lib/**/*.tsx",
+    "scripts/**/*.ts",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "devtemp_nextjs",
+    "devtemp_git",
+    "devtemp_supabase",
+    "future-value-investment-calculator",
+    "Compound-Interest-Tool",
+    "financialRatios",
+    "lbs-pe-vc-simulations",
+    "mdn-content",
+    "passcpa",
+    "temp-react",
+    "tmp",
+    "tmp-table",
+    "tradingutils-demo"
+  ]
 }

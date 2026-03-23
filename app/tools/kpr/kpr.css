@@ -1,0 +1,38 @@
+/* ── KPR-SPECIFIC STYLES ── */
+.floating-fields { margin-bottom: 12px; }
+.floating-fields.show { display: block; }
+.biaya-toggle { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: rgba(13,148,136,.06); border: 1px solid rgba(13,148,136,.15); border-radius: 12px; cursor: pointer; font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 16px; transition: background .2s; }
+.biaya-toggle:hover { background: rgba(13,148,136,.1); }
+.biaya-chevron { transition: transform .3s; display: inline-block; }
+.biaya-chevron.open { transform: rotate(180deg); }
+.biaya-fields.open { display: block; }
+
+/* ── DTI & PREPAY BADGES ── */
+.dti-badge { padding: 14px 16px; border-radius: 12px; font-size: 13px; font-weight: 600; margin-bottom: 12px; display: none; }
+.dti-badge.show { display: block; }
+.dti-badge.green { background: rgba(34,197,94,.1); border: 1px solid rgba(34,197,94,.2); color: #16a34a; }
+.dti-badge.yellow { background: rgba(245,158,11,.1); border: 1px solid rgba(245,158,11,.2); color: #d97706; }
+.dti-badge.red { background: rgba(239,68,68,.1); border: 1px solid rgba(239,68,68,.2); color: #dc2626; }
+.prepay-badge { padding: 14px 16px; border-radius: 12px; font-size: 13px; font-weight: 600; background: rgba(13,148,136,.08); border: 1px solid rgba(13,148,136,.15); color: var(--navy); line-height: 1.7; margin-bottom: 12px; display: none; }
+.prepay-badge.show { display: block; }
+.prepay-badge .tag { font-family: var(--font-mono), monospace; font-size: 9px; text-transform: uppercase; letter-spacing: 1.5px; background: rgba(13,148,136,.12); padding: 3px 8px; border-radius: 4px; color: var(--teal); }
+.biaya-card { background: linear-gradient(135deg, #0F2535, #1B3C53); }
+
+/* ── COMPARE & AMORT ── */
+.compare-btn { width: 100%; padding: 12px; border-radius: 10px; font-size: 13px; font-weight: 700; cursor: pointer; border: 1.5px solid var(--border); background: transparent; color: var(--navy); font-family: inherit; transition: all .2s; margin-bottom: 12px; }
+.compare-btn:hover { background: rgba(27,60,83,.04); }
+.tenor-compare.show { display: block; margin-bottom: 16px; }
+.amort-toggle { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 14px 18px; background: rgba(27,60,83,.04); border: 1px solid var(--border); border-radius: 12px; cursor: pointer; font-size: 13px; font-weight: 700; color: var(--navy); font-family: inherit; margin-bottom: 12px; transition: background .2s; }
+.amort-toggle:hover { background: rgba(27,60,83,.08); }
+.amort-arrow { transition: transform .3s; display: inline-block; }
+.amort-arrow.open { transform: rotate(180deg); }
+.amort-wrap.open { display: block; margin-bottom: 16px; }
+.amort-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+
+/* ── STICKY BAR ── */
+.sticky-bar { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(27,60,83,.95); backdrop-filter: blur(14px); padding: 12px 24px; display: none; align-items: center; justify-content: space-between; z-index: 999; }
+.sticky-bar.show { display: flex; }
+@media(min-width: 769px) { .sticky-bar { display: none !important; } }
+.sticky-label { font-family: var(--font-mono), monospace; font-size: 9px; text-transform: uppercase; color: rgba(255,255,255,.5); letter-spacing: 1px; }
+.sticky-value { font-size: 18px; font-weight: 800; color: #fff; letter-spacing: -.5px; }
+.sticky-btn { background: linear-gradient(135deg, #0D9488, #14B8A6); color: #fff; border: none; border-radius: 10px; padding: 10px 18px; font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit; }

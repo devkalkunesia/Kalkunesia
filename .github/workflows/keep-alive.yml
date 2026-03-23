@@ -1,0 +1,23 @@
+name: Keep Supabase Alive
+
+on:
+  schedule:
+    - cron: '0 17 * * 1,4'
+  workflow_dispatch:
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase Kalkunesia
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" \
+            "${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}/rest/v1/" \
+            -H "apikey: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}")
+          echo "Response: $response"
+          if [ "$response" = "200" ]; then
+            echo "Supabase aktif"
+          else
+            echo "Warning: $response"
+          fi
